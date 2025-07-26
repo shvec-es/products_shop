@@ -1,0 +1,18 @@
+export const refs = {
+  categoriesList: document.querySelector('.categories'),
+  productsList: document.querySelector('.products'),
+  loadMoreBtn: document.querySelector('.load-more-btn'),
+  divNotFound: document.querySelector('.not-found'),
+  divModal: document.querySelector('.modal'),
+  modalCloseBtn: document.querySelector('.modal__close-btn'),
+  divModalProduct: document.querySelector('.modal-product'),
+  searchForm: document.querySelector('.search-form'),
+  searchClearForm: document.querySelector('.search-form__btn-clear'),
+  addToWishBtn: document.querySelector('.modal-product__btn--wishlist'),
+  addToCartBtn: document.querySelector('.modal-product__btn--cart'),
+  cartCount: document.querySelector('[data-cart-count]'),
+  wishCount: document.querySelector('[data-wishlist-count]'),
+  cartItemsCount: document.querySelector('[data-count]'),
+  cartItemsPrice: document.querySelector('[data-price]'),
+  cartBuyProducts: document.querySelector('.cart-summary__btn'),
+};

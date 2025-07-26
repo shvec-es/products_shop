@@ -1,1 +1,30 @@
 //Логіка сторінки Cart
+import { LS_KEYS } from './js/constants';
+import {
+  addToCartClick,
+  addToWishClick,
+  cartBuyProductsClick,
+  getProductByID,
+  getProductsInCart,
+} from './js/handlers';
+import { closeModal } from './js/modal';
+import { refs } from './js/refs';
+import { getSavedProducts } from './js/storage';
+
+// при оновленні сторінки записуємо кількість товарів з ЛС
+refs.cartCount.textContent = getSavedProducts(LS_KEYS.CART).length;
+refs.wishCount.textContent = getSavedProducts(LS_KEYS.WISHLIST).length;
+
+getProductsInCart();
+refs.cartBuyProducts.addEventListener('click', cartBuyProductsClick);
+// 4. Додаємо слухача на список продуктів
+refs.productsList.addEventListener('click', getProductByID);
+// 4.1 Додаємо слухача на кнопку закриття модалки
+refs.modalCloseBtn.addEventListener('click', closeModal);
+
+// 6. Додаємо слухачів на кнопки Додавання товару у кошик і вішліст в модалці
+refs.addToCartBtn.addEventListener('click', async () => {
+  addToCartClick();
+  await getProductsInCart();
+});
+refs.addToWishBtn.addEventListener('click', addToWishClick);
