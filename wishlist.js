@@ -1,0 +1,2 @@
+import{r as t,g as a,a as e,b as d,c as n,d as i,e as o,L as s}from"./assets/handlers-DrDR-GwD.js";import"./assets/vendor-4yCzdkXl.js";t.cartCount.textContent=a(s.CART).length;t.wishCount.textContent=a(s.WISHLIST).length;e();t.productsList.addEventListener("click",d);t.modalCloseBtn.addEventListener("click",n);t.addToCartBtn.addEventListener("click",i);t.addToWishBtn.addEventListener("click",async()=>{o(),await e()});
+//# sourceMappingURL=wishlist.js.map

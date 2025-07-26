@@ -1,0 +1,2 @@
+import{r as t,g as a,m as e,n as s,b as c,c as n,e as r,d as o,L as d}from"./assets/handlers-DrDR-GwD.js";import"./assets/vendor-4yCzdkXl.js";t.cartCount.textContent=a(d.CART).length;t.wishCount.textContent=a(d.WISHLIST).length;e();t.cartBuyProducts.addEventListener("click",s);t.productsList.addEventListener("click",c);t.modalCloseBtn.addEventListener("click",n);t.addToCartBtn.addEventListener("click",async()=>{o(),await e()});t.addToWishBtn.addEventListener("click",r);
+//# sourceMappingURL=cart.js.map
